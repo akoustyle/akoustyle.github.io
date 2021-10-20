@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Project.delete_all
+
+puts 'Start..'
+Project.create(
+  name: "My bubble Health",
+  description: "I worked with an UI-UX Designer in order to intergrate his design with the CMS Wordpress.",
+  category: "Web Design"
+)
+
+Project.create(
+  name: "Catherapy",
+  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation. I used Ruby on rails, HTML, SCSS, Javascritp, Stimulo, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
+  category: "Web App"
+)
+
+puts "Done !"
+puts Project.all.length
