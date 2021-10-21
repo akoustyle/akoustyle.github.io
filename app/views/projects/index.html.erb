@@ -1,2 +1,16 @@
+<div class="banner">
+    <div class="container">
+      <h1>Find all my projects and inspirations here !</h1>
+      <p>Learn to code change my life</p>
+      <a class="btn-primary" href="#">Let's talk!</a>
+    </div>
+  </div>
+
 <h1>Projects#index</h1>
 <p>Find me in app/views/projects/index.html.erb</p>
+
+<ul>
+  <% @projects.each do |project| %>
+    <li><%= project.name %></li>
+  <% end %>
+</ul>
