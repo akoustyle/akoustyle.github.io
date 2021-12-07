@@ -16,7 +16,7 @@ Project.create(
 
 Project.create(
   name: "Catherapy",
-  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation. I used Ruby on rails, HTML, SCSS, Javascritp, Stimulo, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
+  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation. I used Ruby on rails, HTML, SCSS, Javascritp, Stimulus, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
   category: "Web App"
 )
 
