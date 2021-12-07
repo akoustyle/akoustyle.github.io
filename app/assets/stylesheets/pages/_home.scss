@@ -1,1 +1,248 @@
 // Specific CSS for your home-page
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1 {
+  color: white;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  color: #ECEDF2;
+}
+
+i {
+  color: #DBDBDB;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 5px;
+}
+
+i:hover {
+  color: #003597;
+  cursor: pointer;
+}
+
+// .banner {
+//   text-align: center;
+//   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("images/axa-banner.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   padding: 150px 0;
+//   height: 100vh;
+// }
+
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+.banner img {
+  height: 100px;
+}
+
+.feature-css {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('css.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-html {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('html.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-ruby {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('ruby.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-js {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('js.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-figma {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('figma.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-heroku {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('heroku.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-sql {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('sql.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-git {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('git.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feature-wordpress {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('wordpress.svg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature h3 {
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  height: 170px;
+}
+
+.features {
+  padding: 50px;
+  text-align: center;
+  background-color: #ECEDF2;
+}
+.projects {
+  padding: 50px;
+  text-align: center;
+  background-color: #ECEDF2;
+}
+
+.features h1 {
+  color: #003597;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.icon-ruby {
+  background-image: asset-url('ruby.svg');
+  background-size: cover;
+  height: 100px;
+  width: 250px;
+}
+
+.typeform-share {
+  background-color: #003597 !important;
+  margin-top: 50px !important;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+.intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+.intro-heading {
+    margin-bottom: 25px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    color:white;
+    font-weight: 700;
+    line-height: 50px;
+}
+.blue {
+  color: #004AAD;
+}
+#typed {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: large;
+  color: white;
+}
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+.blue {
+  color: #004AAD;
+}
+.redish {
+  color: red;
+}
