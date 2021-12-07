@@ -16,10 +16,11 @@
           <div class="col-md-12 col-sm-6 col-md-4">
             <% @projects.each do |project| %>
               <%= link_to project_path(project) do %>
-              <div class="feature" >
-              <%= cl_image_tag project.photo.key, height: 500, width: 600, crop: :fill  %>
-                <div class="feature-title">
-                  <%= project.name %>
+              <div class="project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path project.photo.key, height: 300, crop: :fill %>')">
+              <%#= cl_image_tag project.photo.key, height: 500, width: 600, crop: :fill  %>
+                <div class="project-title">
+                  <h4><%= project.name %></h4>
+                  <p class="text-muted"><%= project.category %> </p>
                 </div>
               </div>
               <% end %>

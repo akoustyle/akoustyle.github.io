@@ -25,7 +25,8 @@ puts "Mybubblehealth save successfully!!"
 
 catherapy = Project.create(
   name: "Catherapy",
-  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation. I used Ruby on rails, HTML, SCSS, Javascritp, Stimulus, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
+  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation.
+  I used Ruby on rails, HTML, SCSS, Javascritp, Stimulus, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
   category: "Web App",
   utl: "https://catherapy.herokuapp.com/"
 )
@@ -38,7 +39,9 @@ puts "Catherapy save successfully!!"
 
 matchpoint = Project.create(
   name: "MatchPoint",
-  description: " MatchPoint is a Web app project develop during my intensive bootcamp at Le Wagon. This Web App only for Women, help you to FIND a sport buddy within your area.<br> Like tinder you can swipe right to like and swipe left to dislike. You can change the sport you want to do each day and then find people that have the same interest.
+  description: " MatchPoint is a Web app project develop during my intensive bootcamp at Le Wagon.
+  This Web App only for Women, help you to FIND a sport buddy within your area.
+  Like tinder you can swipe right to like and swipe left to dislike. You can change the sport you want to do each day and then find people that have the same interest.
   To devlop this app we use a bunch of stuff, so let's get in touch in you want to knoww more!",
   category: "Web App",
   utl: "https://www.matchpoint.fun/"
@@ -51,7 +54,7 @@ matchpoint.save!
 puts "Matchpoint save successfully!!"
 
 cmsports = Project.create(
-  name: "cmsports",
+  name: "C&M Sports Management",
   description: " C&M Sports Management is a company base in Lebanon. During the pandemic situation we have build from scratch this entity in order to assist and help young athletes, clubs, sport orgaizations to have professional support.
   I have personnaly design the digital face of the company, Instagram, Website and philosophy. I use the CMS Wordpress.",
   category: "Web Design",
@@ -65,8 +68,9 @@ cmsports.save!
 puts "cmsports save successfully!!"
 
 aff = Project.create(
-  name: "aff",
-  description: " AFF is a Football academy base in Lebanon that i created from scratch with my friend. I use the cms WIX in order to create a website fast and simple.
+  name: "Académie Française de Football Middle East",
+  description: " AFF is a Football academy base in Lebanon that i created from scratch with my friend.
+  I use the cms WIX in order to create a website fast and simple.
   The aff academy is a brand from C&M Sports Management...",
   category: "Web Design",
   utl: "https://academiefrancaisedefootbaellme.com/"
@@ -91,6 +95,7 @@ puts "attaching photo......"
 puts "saving project......"
 cmsports.save!
 puts "theradoua save successfully!!"
+
 
 puts "Done !"
 puts Project.all.length
