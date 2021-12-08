@@ -1,2 +1,22 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<div class="card-category">
+</div>
+
+<div class="project-category">
+  <div class="card-trip">
+    <%= cl_image_tag @project.photo.key, class: 'img'%>
+    <div class="card-trip-infos">
+      <div>
+        <h1 class="blue"><%= @project.name %></h1>
+        <p><%= @project.description %></p>
+      </div>
+      <span><p class="card-trip-pricing"><%= @project.category %></p></span>
+      <%= image_tag "#{ asset_url "avatar.jpg"}", class: 'card-trip-user avatar-bordered' %>
+    </div>
+    <div class="flex-align">
+      <p class="no-mb" style="padding-left: 15px">Visit the <a href=<%= @project.utl %> target="_blank"> website</a></p>
+    </div>
+  </div>
+  <div class="text-center">
+    <%= link_to "Return to the list", projects_path, class: "btn btn-gradient back-btn" %>
+  </div>
+</div>

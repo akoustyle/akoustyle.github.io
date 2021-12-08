@@ -1,0 +1,35 @@
+.project-title {
+  background-color: #F7F7F7;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0;
+}
+h1 {
+  color: black;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+}
+.project {
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: white;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+  background-image: asset-url('cm.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-muted {
+    color: #fff;
+    opacity: 0.2;
+    font-size: 20px;
+}
+
+.img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}

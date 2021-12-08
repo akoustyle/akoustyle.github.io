@@ -2,15 +2,29 @@
     <div class="container">
       <h1>Find all my projects and inspirations here !</h1>
       <p>Learn to code change my life</p>
-      <a class="btn-primary" href="#">Let's talk!</a>
     </div>
   </div>
 
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
-
-<ul>
-  <% @projects.each do |project| %>
-    <li><%= project.name %></li>
-  <% end %>
-</ul>
+<div class="features">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="section-heading">Projects</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-6 col-md-4">
+            <% @projects.each do |project| %>
+              <%= link_to project_path(project) do %>
+              <div class="project" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path project.photo.key, height: 300, crop: :fill %>')">
+              <%#= cl_image_tag project.photo.key, height: 500, width: 600, crop: :fill  %>
+                <div class="project-title">
+                  <h4><%= project.name %></h4>
+                  <p class="text-muted"><%= project.category %> </p>
+                </div>
+              </div>
+              <% end %>
+            <% end %>
+          </div>
+      </div>
+    </div>
