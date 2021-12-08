@@ -85,7 +85,7 @@ puts "aff save successfully!!"
 theradoua = Project.create(
   name: "Theradoua",
   description: "Theradoua is website I create with the CMS Wordpress. In this website you will be able to book(& add to your calendar) and pay online(via stripe) a health therapy.
-  In anotherhand if your are a therapist, you have the possibility to rent a cabinet to givve your services, with a monthly fee or an hour fee.",
+  In anotherhand if your are a therapist, you have the possibility to rent a cabinet to give your services, with a monthly fee or an hour fee.",
   category: "Web Design",
   utl: "https://theradoua.fr/"
 )
@@ -95,7 +95,6 @@ puts "attaching photo......"
 puts "saving project......"
 cmsports.save!
 puts "theradoua save successfully!!"
-
 
 puts "Done !"
 puts Project.all.length
