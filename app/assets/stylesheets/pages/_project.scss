@@ -4,10 +4,35 @@
   text-align: center;
   padding: 0;
 }
+
 h1 {
-  color: black;
+  color: white;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 30px;
+}
+
+h2 {
+  color: #ECEDF2;
+}
+
+i {
+  color: #DBDBDB;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 5px;
+}
+
+i:hover {
+  color: #003597;
+  cursor: pointer;
 }
 .project {
   text-align: center;

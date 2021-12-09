@@ -1,5 +1,5 @@
 .card-category {
-  background-clip: asset-url('project-banner.png');
+  background-image: asset-url('project-banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,4 +56,68 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+.wish-card-category {
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  width: 53vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: $red;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.wish-info {
+  overflow: hidden;
+  // background: white;
+  // box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.wish-info > img {
+  height: 374px;
+  width: 345px;
+  object-fit: cover;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+}
+.wish-card-details {
+  width: 100%;
+  padding: 2.125rem 1.25rem 2.625rem 1.25rem;
+  // border-radius: 0 0 12px 12px;
+}
+.wish-tag {
+  height: 35px;
+  width: fit-content;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 8px;
+  color: #004AAD;
+  background: #FFFF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  i {
+    margin-right: 2px;
+  }
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // position: absolute;
+  // top: -285px;
 }
