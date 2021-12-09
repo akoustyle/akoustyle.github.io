@@ -73,7 +73,7 @@ aff = Project.create(
   I use the cms WIX in order to create a website fast and simple.
   The aff academy is a brand from C&M Sports Management...",
   category: "Web Design",
-  utl: "https://academiefrancaisedefootbaellme.com/"
+  utl: "https://academiefrancaisedefootballme.com/"
 )
 project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638886689/aff.png")
 aff.photo.attach(io: project_photo, filename: "aff.png", content_type: 'image/png')
