@@ -1,8 +1,9 @@
 .card-category {
-  background-image: assest-url('project-banner.png');
-  background-size: cover;
+
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: asset-url("project-banner.png");
   height: 450px;
   display: flex;
   justify-content: center;
@@ -74,13 +75,13 @@
   border-radius: 15px;
 }
 .wish-card-category {
-  box-shadow: 0px 0px 0px 1px #003597;
+  box-shadow: 0px 0px 0px 0.4px #004AAD;
   transition: box-shadow 0.1s linear;
   margin: 0.5em;
 }
 
 .wish-card-category:hover {
-  box-shadow: 0px 0px 0px 5px #003597; }
+  box-shadow: 0px 0px 0px 5px #004AAD; }
 
 .wish-info {
   overflow: hidden;
