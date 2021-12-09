@@ -1,5 +1,5 @@
 .card-category {
-  background-image: asset_url('/app/assets/images/project-banner.png');
+  background-image: url('/app/assets/images/project-banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 .card-trip p {
   font-size: 12px;
   opacity: .7;
-  margin: 0;
+  margin: 30px;
 }
 .card-trip .card-trip-infos {
   padding: 16px;
