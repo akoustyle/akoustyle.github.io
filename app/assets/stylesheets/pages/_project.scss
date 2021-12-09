@@ -13,6 +13,7 @@ h1 {
 
 h2 {
   color: #ECEDF2;
+  font-family: Blank River;
 }
 
 i {
@@ -27,7 +28,7 @@ ul {
 
 li {
   display: inline;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 
 i:hover {
@@ -41,7 +42,7 @@ i:hover {
   border-radius: 30px;
   height: 450px;
   margin-bottom: 20px;
-  background-image: asset-url('cm.png');
+  // background-image: asset-url('cm.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
