@@ -79,8 +79,10 @@
   // margin: 0.5em;
 }
 .centered {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 .wish-card-category:hover {
