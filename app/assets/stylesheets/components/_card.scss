@@ -76,7 +76,11 @@
 }
 .wish-card-category {
   transition: box-shadow 0.1s linear;
-  margin: 0.5em;
+  // margin: 0.5em;
+}
+.centered {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wish-card-category:hover {

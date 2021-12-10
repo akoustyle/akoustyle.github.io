@@ -4,6 +4,9 @@ body {
   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #0000;
 }
+.content-wrapper {
+  width: 100%;
+}
 
 h1 {
   color: white;
@@ -13,6 +16,11 @@ h1 {
 
 h2 {
   color: #ECEDF2;
+}
+h4, h3{
+  color: white;
+  font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
 
 i {

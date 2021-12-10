@@ -25,7 +25,7 @@ puts "Mybubblehealth save successfully!!"
 
 catherapy = Project.create(
   name: "Catherapy",
-  description: "Web app project from intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localisation.
+  description: "Web app project from my intensive bootcamp at Le Wagon. Web App to find a cat TO RENT within your localization.
   I used Ruby on rails, HTML, SCSS, Javascritp, Stimulus, Geocoder & Mapbox API, Active records, Postgresql, Scalingo,...",
   category: "Web App",
   utl: "https://catherapy.herokuapp.com/"
@@ -38,11 +38,11 @@ catherapy.save!
 puts "Catherapy save successfully!!"
 
 matchpoint = Project.create(
-  name: "MatchPoint",
+  name: "Match Point",
   description: " MatchPoint is a Web app project develop during my intensive bootcamp at Le Wagon.
   This Web App only for Women, help you to FIND a sport buddy within your area.
   Like tinder you can swipe right to like and swipe left to dislike. You can change the sport you want to do each day and then find people that have the same interest.
-  To devlop this app we use a bunch of stuff, so let's get in touch in you want to knoww more!",
+  To devlop this app we use a bunch of stuff, so let's get in touch if you want to know more!",
   category: "Web App",
   utl: "https://www.matchpoint.fun/"
 )
@@ -84,8 +84,8 @@ puts "aff save successfully!!"
 
 theradoua = Project.create(
   name: "Theradoua",
-  description: "Theradoua is website I create with the CMS Wordpress. In this website you will be able to book(& add to your calendar) and pay online(via stripe) a health therapy.
-  In anotherhand if your are a therapist, you have the possibility to rent a cabinet to give your services, with a monthly fee or an hour fee.",
+  description: "Theradoua is website I create with the CMS Wordpress. In this website you will be able to book(& add to your calendar) and pay online(via stripe) a health therapy session.
+  In an other hand if your are a therapist, you have the possibility to rent a cabinet to give your services, with a monthly fee or an hour fee.",
   category: "Web Design",
   utl: "https://theradoua.fr/"
 )
