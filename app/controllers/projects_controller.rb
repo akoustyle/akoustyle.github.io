@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find_by_slug(params[:slug])
   end
 
   def new
@@ -20,7 +20,7 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def edit
+  def edits
   end
 
   def update
