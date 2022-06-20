@@ -29,26 +29,22 @@
       <%# </div> %>
     <%# </div> %>
 <div class="container">
-  <div class="row centered">
-    <div class="col-lg-12 centered">
-        <div class="col-md-12 col-sm-6 col-xs-4 centered" style="position: relative, width: 100%, padding-right: 0, padding-left: 0" >
-          <% @projects.each do |project|%>
-            <%= link_to project_path(project) do %>
-              <div class="wish-card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.3)), url(<%= cl_image_path project.photo.key %>)">
-                <div class="tag">
-                  <div class="wish-tag">
-                    <%= project.name %>
-                  </div>
-                </div>
-                <div class="wish-info" >
-                  <div class="wish-username">
-                    <%= project.category %>
-                  </div>
-                </div>
-              </div>
-            <% end %>
-          <% end %>
-         </div>
-    </div>
+  <div class="img-wrapper" >
+    <% @projects.each do |project|%>
+      <%= link_to project_path(project) do %>
+        <div class="wish-card-category" style="background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.3)), url(<%= cl_image_path project.photo.key, crop: :fill %>)">
+          <div class="tag">
+            <div class="wish-tag">
+              <%= project.name %>
+            </div>
+          </div>
+          <div class="wish-info" >
+            <div class="wish-username">
+              <%= project.category %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </div>
