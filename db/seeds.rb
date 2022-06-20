@@ -16,7 +16,7 @@ mbh = Project.create(
   category: "Web Design",
   utl: "https://mybubblehealth.com"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638881718/mbh.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720540/mockup-of-an-imac-and-a-macbook-pro-placed-on-a-desk-36490-r-el2_gqyqp7.png")
 mbh.photo.attach(io: project_photo, filename: "Catherapy.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -30,7 +30,7 @@ catherapy = Project.create(
   category: "Web App",
   utl: "https://catherapy.herokuapp.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638878153/Catherapy.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720582/mockup-of-an-imac-on-a-modern-desk-2138-el_iecys0.png")
 catherapy.photo.attach(io: project_photo, filename: "Catherapy.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -46,7 +46,7 @@ matchpoint = Project.create(
   category: "Web App",
   utl: "https://www.matchpoint.fun/"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638878153/Match-point.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720473/illustrated-mockup-featuring-two-iphone-11-pro-screens-with-a-customizable-background-2885_uqfplx.png")
 matchpoint.photo.attach(io: project_photo, filename: "Match-point.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -60,7 +60,7 @@ cmsports = Project.create(
   category: "Web Design",
   utl: "https://cmsportsmanagement.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638886264/cmsports.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720420/mockup-of-a-macbook-placed-on-a-coffee-table-2313-el1_1_ymqdhr.png")
 cmsports.photo.attach(io: project_photo, filename: "cmsports.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -75,7 +75,7 @@ aff = Project.create(
   category: "Web Design",
   utl: "https://academiefrancaisedefootballme.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638886689/aff.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720443/mockup-of-an-imac-featuring-a-wooden-desk-in-a-home-office-setting-36558-r-el2_jjk8c8.png")
 aff.photo.attach(io: project_photo, filename: "aff.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -89,7 +89,7 @@ theradoua = Project.create(
   category: "Web Design",
   utl: "https://theradoua.fr/"
 )
-project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v1638887057/theradoua.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720376/mockup-of-three-iphones-xs-max-lying-on-a-customizable-background-253-el_q51vnk.png")
 theradoua.photo.attach(io: project_photo, filename: "theradoua.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -102,7 +102,7 @@ adcrew = Project.create(
   category: "Web App",
   utl: "https://adcrew-paris.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/fl_lossy,q_auto/v1655717040/IMG_1586_frp2do.webp")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655716849/The_WKND_iPhone_Mockup_bkckyf.jpg")
 adcrew.photo.attach(io: project_photo, filename: "adcrew.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
