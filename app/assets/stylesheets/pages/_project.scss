@@ -65,4 +65,29 @@ i:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 6px;
+  padding:10px;
+}
+
+@media (min-width: 898px) and (max-width: 1124px) {
+  .img-wrapper {
+    grid-template-columns: 1fr 1fr;
+    & .wish-card-category {
+      height:40vh;
+    }
+  }
+}
+
+@media (min-width: 590px) and (max-width: 897px) {
+  .img-wrapper {
+    grid-template-columns: 1fr 1fr;
+    & .wish-card-category {
+      height:30vh;
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 589px) {
+  .img-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
