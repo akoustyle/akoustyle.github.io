@@ -3,7 +3,7 @@
 
 <div class="project-category">
   <div class="card-trip">
-    <%= cl_image_tag @project.photo.key, crop: :fill, class: 'img'%>
+    <%= cl_image_tag @project.photo.first.key, crop: :fill, class: 'img'%>
     <div class="card-trip-infos">
       <div>
         <h1 class="blue"><%= @project.name %></h1>

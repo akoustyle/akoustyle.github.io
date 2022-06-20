@@ -79,7 +79,7 @@ project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v163
 aff.photo.attach(io: project_photo, filename: "aff.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
-cmsports.save!
+aff.save!
 puts "aff save successfully!!"
 
 theradoua = Project.create(
@@ -93,7 +93,20 @@ project_photo = URI.open("https://res.cloudinary.com/dc71zwpev/image/upload/v163
 theradoua.photo.attach(io: project_photo, filename: "theradoua.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
-cmsports.save!
+theradoua.save!
+puts "theradoua save successfully!!"
+
+adcrew = Project.create(
+  name: "AD CREW",
+  description: "AD CREW is a web app I create with ruby & Ruby on rails. At the beginning it was just a redesign of a static website but i offer the agency to create a website in which they don't need a webmaster to update or creat their assets. Therefore I use a MVC model and a two CRUD feature for the agency to have flexibility on their talent and campaigns.",
+  category: "Web App",
+  utl: "https://adcrew-paris.com/"
+)
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/fl_lossy,q_auto/v1655717040/IMG_1586_frp2do.webp")
+adcrew.photo.attach(io: project_photo, filename: "adcrew.png", content_type: 'image/png')
+puts "attaching photo......"
+puts "saving project......"
+adcrew.save!
 puts "theradoua save successfully!!"
 
 puts "Done !"
