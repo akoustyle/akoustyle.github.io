@@ -107,7 +107,20 @@ adcrew.photos.attach(io: project_photo, filename: "adcrew.png", content_type: 'i
 puts "attaching photo......"
 puts "saving project......"
 adcrew.save!
-puts "theradoua save successfully!!"
+puts "adcrew save successfully!!"
+
+uxdesign = Project.create(
+  name: "UX Design",
+  description: "Some Figma design.",
+  category: "UX Design",
+  utl: "http://www.portfolio-oneal.me/projects"
+)
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1657068624/New_Product_Mockup_Now_Available_Marketing_Promotion_Instagram_Story_vofbzk.jpg")
+uxdesign.photos.attach(io: project_photo, filename: "uxdesign.png", content_type: 'image/png')
+puts "attaching photo......"
+puts "saving project......"
+uxdesign.save!
+puts "uxdesign save successfully!!"
 
 puts "Done !"
 puts Project.all.length
