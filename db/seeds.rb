@@ -135,5 +135,18 @@ puts "saving project......"
 uxdesign2.save!
 puts "uxdesign2 save successfully!!"
 
+battleship = Project.create(
+  name: "Battleship game",
+  description: "The famous board game Battleship develop in the terminal, follow the step in the github public repo",
+  category: "Web App",
+  utl: "https://github.com/akoustyle/battleship-board-game"
+)
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1657803857/Capture_d_e%CC%81cran_2022-07-14_a%CC%80_14.49.20_ve56q1.png")
+battleship.photos.attach(io: project_photo, filename: "battleship.png", content_type: 'image/png')
+puts "attaching photo......"
+puts "saving project......"
+battleship.save!
+puts "battleship save successfully!!"
+
 puts "Done !"
 puts Project.all.length
