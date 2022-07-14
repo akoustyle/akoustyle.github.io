@@ -137,7 +137,7 @@ puts "uxdesign2 save successfully!!"
 
 battleship = Project.create(
   name: "Battleship game",
-  description: "The famous board game Battleship develop in the terminal, follow the step in the github public repo",
+  description: "The famous board game Battleship develop in the terminal, follow the step in the github public repo.",
   category: "Web App",
   utl: "https://github.com/akoustyle/battleship-board-game"
 )
