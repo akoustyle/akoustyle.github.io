@@ -1,0 +1,619 @@
+  <!-- Btn flottant gauche petit menu -->
+
+  <div class="btn-rond-menu">
+    <div class="cont-ligne">
+        <div class="ligne-unique"></div>
+    </div>
+  </div>
+
+  <!-- Naviguation verticale -->
+  <nav class="nav-gauche">
+
+    <div class="blocs-menu">
+      <div class="cercle-portrait">
+        <%#= image_tag "avatar.png"  %>
+      </div>
+    </div>
+
+    <div class="blocs-menu">
+      <span class="nav-menu-item">
+        <a href="#">
+          Accueil
+        </a>
+      </span>
+    </div>
+    <div class="blocs-menu">
+      <span class="nav-menu-item">
+        <a href="#">
+          Presentation
+        </a>
+      </span>
+    </div>
+    <div class="blocs-menu">
+      <span class="nav-menu-item">
+        <a href="#">
+          Portfolio
+        </a>
+      </span>
+    </div>
+    <div class="blocs-menu">
+      <span class="nav-menu-item">
+        <a href="#">
+          Compétences
+        </a>
+      </span>
+    </div>
+    <div class="blocs-menu">
+      <span class="nav-menu-item">
+        <a href="#">
+          Contact
+        </a>
+      </span>
+    </div>
+    <div class="blocs-menu">
+      <div class="logo-cercle">
+        <a href="">
+          <%= image_tag "logo.png" %>
+        </a>
+      </div>
+    </div>
+
+  </nav>
+<div class="scroll">
+  <div class="smooth">
+        <!-- Section Accueil -->
+
+        <section class="accueil" id="accueil">
+          <h1>Bienvenue sur mon portfolio</h1>
+          <p class="txt-animation">Moi c'est O'neal<span id="typed"></span></p>
+          <a href="#" class="btn-acc btn-acc1">Portfolio</a>
+          <a href="#" class="btn-acc btn-acc2">Experience</a>
+
+          <div class="medias">
+            <a href="https://github.com" target="_blank">
+              <div class="media media1">
+                <%= image_tag "github.svg" %>
+              </div>
+            </a>
+            <a href="https://github.com">
+              <div class="media media2">
+                <%= image_tag "github.svg" %>
+              </div>
+            </a>
+            <a href="https://github.com">
+              <div class="media media3">
+                <%= image_tag "github.svg" %>
+              </div>
+            </a>
+          </div>
+
+          <a href="#pres">
+              <div class="btn-rond">
+                  <%# <img src="images/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc"> %>
+                  <%= image_tag "arrowDown.svg", alt: "logo fleche bas", class: "logo-btn-rond-acc" %>
+              </div>
+          </a>
+        </section>
+
+        <!-- Section Présentation -->
+
+      <section class="presentation" id="pres">
+
+          <h2 class="titre-pres">Lorem ipsum dolor sit amet.</h2>
+
+        <div class="container-presentation">
+
+            <div class="fond-forme"></div>
+
+            <div class="pres-gauche">
+                <h3>Laborum cumque aliquid ut pariatur, natus maxime.</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos quisquam rerum aliquam quasi vitae nisi expedita debitis cupiditate asperiores optio eveniet labore, vel beatae!</p>
+                <br>
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere illum ullam exercitationem praesentium veniam?
+                </p>
+            </div>
+
+            <div class="pres-droite">
+                <ul class="liste-presentation">
+                    <li class="item-liste i1">
+                        <span class="chiffre-style">1.</span>
+                        <p class="txt-liste">UX Design expert</p>
+                    </li>
+                    <li class="item-liste i2">
+                        <span class="chiffre-style">2.</span>
+                        <p class="txt-liste">Spécialiste UI</p>
+                    </li>
+                    <li class="item-liste i3">
+                        <span class="chiffre-style">3.</span>
+                        <p class="txt-liste">Développeur Back-end</p>
+                    </li>
+                    <li class="item-liste i4">
+                        <span class="chiffre-style">4.</span>
+                        <p class="txt-liste">Développeur Front-End</p>
+                    </li>
+                    <li class="item-liste i5">
+                        <span class="chiffre-style">5.</span>
+                        <p class="txt-liste">Développeur Full-Stack</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+      </section>
+
+      <!-- Section Portfolio -->
+
+      <section class="portfolio" id="port">
+
+
+        <h2 class="titre-port">Mon Portfolio</h2>
+
+        <div class="cont-portfolio">
+
+          <% @projects.each do |project| %>
+            <div class="item vague1">
+              <div class="cont-img-port">
+                  <%# <img src="ressources/bootstrap.jpg" alt="img portfolio"> %>
+                  <%= image_tag project.photos.first %>
+              </div>
+              <h3><%= project.name %></h3>
+              <p><%= project.category %></p>
+              <a href="<%= project.utl %>" class="btn-projets" target="_blank">Découvrez le projet</a>
+            </div>
+          <% end %>
+
+        </div>
+
+
+      </section>
+
+      <!-- Section Range -->
+
+      <section class="section-range" id="range">
+
+        <h2 class="titre-exp">Mes compétences</h2>
+
+        <div class="grille-skill">
+
+
+            <div class="range-cont">
+                <p class="label-skill">Ruby on Rails</p>
+                <p class="number-skill">90%</p>
+                <div class="barre-skill b1"></div>
+                <div class="barre-grises"></div>
+            </div>
+            <div class="range-cont">
+                <p class="label-skill">SEO</p>
+                <p class="number-skill">75%</p>
+                <div class="barre-skill b2"></div>
+                <div class="barre-grises"></div>
+            </div>
+            <div class="range-cont">
+                <p class="label-skill">UI / UX</p>
+                <p class="number-skill">70%</p>
+                <div class="barre-skill b3"></div>
+                <div class="barre-grises"></div>
+            </div>
+
+
+            <div class="range-cont">
+                <p class="label-skill">Stimulus</p>
+                <p class="number-skill">80%</p>
+                <div class="barre-skill b4"></div>
+                <div class="barre-grises"></div>
+            </div>
+            <div class="range-cont">
+                <p class="label-skill">Wordpress</p>
+                <p class="number-skill">90%</p>
+                <div class="barre-skill b5"></div>
+                <div class="barre-grises"></div>
+            </div>
+            <div class="range-cont">
+                <p class="label-skill">HTML&CSS</p>
+                <p class="number-skill">80%</p>
+                <div class="barre-skill b6"></div>
+                <div class="barre-grises"></div>
+            </div>
+
+
+        </div>
+
+      </section>
+
+      <!-- Section -->
+
+      <section class="travail-exp" id="exp">
+
+        <h2 class="titre-travail-exp">Mes expériences</h2>
+
+        <div class="cont-exp-travail">
+
+            <div class="barre-verticale">
+                <div class="boule-ico boule-ico1">
+                    <%= image_tag "clustech.png" %>
+                </div>
+                <div class="boule-ico">
+                    <%= image_tag "adc.png" %>
+                </div>
+                <div class="boule-ico">
+                  <%= image_tag "lewagon.png" %>
+                </div>
+                <div class="boule-ico">
+                    <%= image_tag "img_logo-mbh_header.png" %>
+                </div>
+                <div class="boule-ico">
+                    <%= image_tag "psg.png" %>
+                </div>
+            </div>
+
+
+            <div class="flex-cont-bloc-exp">
+
+                <div class="bloc bloc1">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Clustech, 2022</p>
+                        <p class="txt-section">Développeur back-end freelance</p>
+                    </div>
+                </div>
+
+                <div class="bloc bloc2">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Adcrew-Paris, 2022</p>
+                        <p class="txt-section">Développeur fullstack freelance</p>
+                    </div>
+                </div>
+
+                <div class="bloc bloc3">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">Le Wagon, 2021-222</p>
+                        <p class="txt-section">Professeur assistant en formation Développeur Web</p>
+                    </div>
+                </div>
+
+                <div class="bloc bloc4">
+                    <div class="contenu-bloc">
+                        <p class="titre-section-bloc">My Bubble Health, 2021</p>
+                        <p class="txt-section">Développeur Wordpress freelance</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+      </section>
+
+      <!-- Section Parallax -->
+
+      <div class="section-parallax">
+          <p class="txt-par">
+              352 verres d'eau
+          </p>
+          <p class="txt-par">
+              16 projets
+          </p>
+          <p class="txt-par">
+              8 clients
+          </p>
+      </div>
+
+      <!-- Section Contact -->
+
+      <section class="section-contact2" id="contact2">
+
+        <h2><strong>Rentrons</strong> en Contact</h2>
+
+        <div class="container-form">
+
+            <form class="form-bloc">
+
+                <div class="form-groupe">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" required maxlength="16" id="prenom">
+                </div>
+                <div class="form-groupe">
+                    <label for="nom">Nom</label>
+                    <input type="text" required maxlength="16" id="nom">
+                </div>
+                <div class="form-groupe">
+                    <textarea id="txt" placeholder="Votre message" required></textarea>
+                </div>
+
+                <div class="form-groupe" data-toggle="tooltip" data-placement="top" title="Désolé, le formulaire ne fonctionne pas!!!">
+                    <input type="submit" value="ENVOYER" class="button-sub">
+                </div>
+                <script>$(function () {$('[data-toggle="tooltip"]').tooltip()})</script>
+                <!-- Generated markup by the plugin -->
+                <div class="tooltip bs-tooltip-top" role="tooltip">
+                  <div class="arrow"></div>
+                  <div class="tooltip-inner">
+                    Some tooltip text!
+                  </div>
+                </div>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </form>
+
+        </div>
+
+
+      </section>
+
+    </div>
+  </div>
+</div>
+<footer>
+    Tout Droits réservés &copy;
+</footer>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <script>
+     const btnMenu = document.querySelector('.btn-rond-menu')
+  const nav = document.querySelector('.nav-gauche');
+  const allItemNav = document.querySelectorAll('.nav-menu-item');
+  const ligne = document.querySelector('.cont-ligne');
+
+    btnMenu.addEventListener('click', () => {
+
+        ligne.classList.toggle('active')
+        nav.classList.toggle('menu-visible')
+
+    })
+
+    if(window.matchMedia('(max-width: 1300px)')) {
+
+        allItemNav.forEach(item => {
+            item.addEventListener('click', () => {
+                nav.classList.toggle('menu-visible')
+                ligne.classList.toggle('active');
+            })
+        })
+
+    }
+
+  </script>
+
+  <script>
+    // Animation écriture
+
+    const txtAnim = document.querySelector('.txt-animation');
+
+    let typewriter = new Typewriter(txtAnim,  {
+        loop: true,
+        deleteSpeed: 20
+    })
+
+    typewriter
+    .pauseFor(1800)
+    .changeDelay(20)
+    .typeString("Moi c\'est O'neal")
+    .pauseFor(300)
+    .typeString('<strong>, Développeur Full-Stack</strong> !')
+    .pauseFor(1000)
+    .deleteChars(13)
+    .typeString('<span style="color: #27ae60;"> CSS</span> !')
+    .pauseFor(1000)
+    .deleteChars(5)
+    .typeString('<span style="color: #EA39ff;"> Ruby</span> !')
+    .pauseFor(1000)
+    .deleteChars(6)
+    .typeString('<span style="color: midnightblue;"> Ruby on Rails</span> !')
+    .pauseFor(1000)
+    .deleteChars(16)
+    // .typeString('<span style="color: #ff6910;"> Stimulus</span> !')
+    // pauseFor(1000)
+    // .deleteChars(11)
+    // .typeString('<span style="color: #004AAD;"> Wordpress</span> !')
+    // pauseFor(1000)
+    // .deleteChars(12)
+    // .typeString('<span style="color: #ff6910;"> Web designer</span> !')
+    .start()
+  </script>
+  <script>
+    // Anim portfolio
+
+    const portfolioContainer = document.querySelector('.portfolio')
+    const titrePortfolio = document.querySelector('.titre-port')
+    const itemPortfolio = document.querySelectorAll('.vague1')
+
+    const tlPortfolio = new TimelineMax();
+    const controller = new ScrollMagic.Controller();
+
+    tlPortfolio
+    .from(titrePortfolio, {y: -50, opacity: 0, duration: 0.5})
+    .staggerFrom(itemPortfolio, 1, {opacity: 0}, 0.2, '-=0.5')
+
+    const scene2 = new ScrollMagic.Scene({
+        triggerElement: portfolioContainer,
+        triggerHook: 0.5,
+        reverse: false
+    })
+    .setTween(tlPortfolio)
+    // .addIndicators()
+    .addTo(controller)
+  </script>
+  <script>
+    // Animation range
+
+    const sectionComp = document.querySelector('.section-range');
+    const titreComp = document.querySelector('.titre-exp');
+    const allLabel = document.querySelectorAll('.label-skill')
+    const allPourcent = document.querySelectorAll('.number-skill')
+    const allBarres = document.querySelectorAll('.barre-skill')
+    const allShadowBarres = document.querySelectorAll('.barre-grises')
+
+    const tlCompetences = new TimelineMax();
+
+    tlCompetences
+    .from(titreComp, {opacity: 0, duration: 0.6})
+    .staggerFrom(allLabel, 0.5, {y: -50, opacity:0}, 0.1, '-=0.5')
+    .staggerFrom(allPourcent, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
+    .staggerFrom(allShadowBarres, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
+    .staggerFrom(allBarres, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
+
+    const scene5 = new ScrollMagic.Scene({
+        triggerElement: sectionComp,
+        reverse: false
+    })
+    .setTween(tlCompetences)
+    .addTo(controller);
+  </script>
+  <script>
+    // Anim GSAP + ScrollMagic
+
+    const navbar = document.querySelector('.nav-gauche');
+    const titre = document.querySelector('h1');
+    const btn = document.querySelectorAll('.btn-acc')
+    const btnMedias = document.querySelectorAll('.media')
+    const btnRondAccueil = document.querySelector('.btn-rond')
+
+
+    const TL1 = gsap.timeline({paused: true});
+    const controller = new ScrollMagic.Controller();
+
+
+    TL1
+    .to(navbar, {left: '0px', ease: Power3.easeOut, duration: 0.6})
+    .from(titre, {y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4})
+    .staggerFrom(btn, 1, {opacity: 0}, 0.2, '-=0.30')
+    .staggerFrom(btnMedias, 1, {opacity: 0}, 0.2, '-=0.75')
+    .from(btnRondAccueil, {y: -50, opacity:0, ease: Power3.easeOut, duration: 0.4}, '-=1')
+
+    window.addEventListener('load', () => {
+        TL1.play();
+    })
+  </script>
+  <script>
+    // Animation ScrollMagic GSAP presentation
+
+    const presentationContainer = document.querySelector('.presentation')
+    const titrePres = document.querySelector('.titre-pres');
+    const presGauche = document.querySelector('.pres-gauche')
+    const listePres = document.querySelectorAll('.item-liste')
+
+    const tlpres = new TimelineMax();
+
+    tlpres
+    .from(titrePres, {y: -200, opacity: 0, duration: 0.6})
+    .from(presGauche, {y:-20, opacity: 0, duration: 0.6}, '-=0.5')
+    .staggerFrom(listePres, 1, {opacity: 0}, 0.2, '-=0.5')
+
+    const controller = new ScrollMagic.Controller();
+
+    const scene = new ScrollMagic.Scene({
+        triggerElement: presentationContainer,
+        triggerHook: 0.5,
+        reverse: false
+    })
+    .setTween(tlpres)
+    .addIndicators()
+    .addTo(controller)
+
+  </script>
+  <script>
+    // Animation Contact
+
+  const input_fields = document.querySelectorAll('input');
+
+  for(let i = 0; i < input_fields.length; i++) {
+
+      let field = input_fields[i];
+
+      field.addEventListener('input', (e) => {
+          if(e.target.value !== ''){
+              e.target.parentNode.classList.add('animation')
+          } else if (e.target.value == ''){
+              e.target.parentNode.classList.remove('animation')
+          }
+      })
+
+  }
+  </script>
+  <script>
+    let svgns = "http://www.w3.org/2000/svg";
+    let root = document.querySelector("svg");
+    let ease = 0.75;
+
+    let pointer = {
+      x: window.innerWidth  / 2,
+      y: window.innerHeight / 2
+    };
+
+    window.addEventListener("mousemove", (event) => {
+      pointer.x = event.clientX;
+      pointer.y = event.clientY;
+    });
+
+    let leader = (prop) => {
+      return prop === "x" ? pointer.x : pointer.y;
+    }
+
+    let total = 200;
+    for (let i = 0; i < total; i++) {
+      leader = createLine(leader, i);
+    }
+
+    function createLine(leader, i) {
+
+      let line = document.createElementNS(svgns, "line");
+      root.appendChild(line);
+
+      gsap.set(line, { x: -1500, y: -750 });
+
+      let pos = gsap.getProperty(line);
+
+      gsap.to(line, {
+        duration: 10000,
+        x: "+=150",
+        y: "+=10",
+        repeat: -1,
+        ease: "expo.inOut",
+        modifiers: {
+          x: () => {
+            let posX = pos("x");
+            let leaderX = leader("x");
+            let x = posX + (leaderX - posX) * ease;
+            line.setAttribute("x2", leaderX - x);
+            return x;
+          },
+          y: () => {
+            let posY = pos("y");
+            let leaderY = leader("y");
+            let y = posY + (leaderY - posY) * ease;
+            line.setAttribute("y2", leaderY - y);
+            return y;
+          }
+        }
+      });
+
+      return pos;
+}
+  </script>

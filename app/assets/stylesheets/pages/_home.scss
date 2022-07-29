@@ -1,47 +1,47 @@
 // Specific CSS for your home-page
-body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: #0000;
-}
-.content-wrapper {
-  width: 100%;
-}
+// body {
+//   overflow-x: hidden;
+//   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+//   background-color: #0000;
+// }
+// .content-wrapper {
+//   width: 100%;
+// }
 
-h1 {
-  color: white;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 30px;
-}
+// h1 {
+//   color: white;
+//   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+//   font-size: 30px;
+// }
 
-h2 {
-  color: #ECEDF2;
-}
-h4, h3{
-  color: white;
-  font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 22px;
-}
+// h2 {
+//   color: #ECEDF2;
+// }
+// h4, h3{
+//   color: white;
+//   font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
+//   font-size: 22px;
+// }
 
-i {
-  color: #DBDBDB;
-  font-size: 16px;
-}
+// i {
+//   color: #DBDBDB;
+//   font-size: 16px;
+// }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+// ul {
+//   list-style: none;
+//   padding: 0;
+// }
 
-li {
-  display: inline;
-  margin: 0 5px;
-}
+// li {
+//   display: inline;
+//   margin: 0 5px;
+// }
 
-i:hover {
-  color: #004AAD;
-  cursor: pointer;
-}
+// i:hover {
+//   color: #004AAD;
+//   cursor: pointer;
+// }
 
 // .banner {
 //   text-align: center;
@@ -617,10 +617,10 @@ section {
   }
 
 }
-body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+// body {
+//   overflow-x: hidden;
+//   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// }
 
 #typed {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -808,97 +808,97 @@ fieldset[disabled] .btn-xl.active {
   background-color: #fff;
 }
 
-.navbar-default {
-  border-color: transparent;
-  background-color: transparent;
-}
+// .navbar-default {
+//   border-color: transparent;
+//   background-color: transparent;
+// }
 
-.navbar-default .navbar-brand {
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-  color: #004AAD;
-}
+// .navbar-default .navbar-brand {
+//   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+//   color: #004AAD;
+// }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-  color: #fec503;
-}
+// .navbar-default .navbar-brand:hover,
+// .navbar-default .navbar-brand:focus,
+// .navbar-default .navbar-brand:active,
+// .navbar-default .navbar-brand.active {
+//   color: #fec503;
+// }
 
-.navbar-default .navbar-collapse {
-  border-color: rgba(255, 255, 255, .02);
-}
+// .navbar-default .navbar-collapse {
+//   border-color: rgba(255, 255, 255, .02);
+// }
 
-.navbar-default .navbar-toggle {
-  border-color: #1ee2e7;
-  background-color: #1ee2e7;
-}
+// .navbar-default .navbar-toggle {
+//   border-color: #1ee2e7;
+//   background-color: #1ee2e7;
+// }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
+// .navbar-default .navbar-toggle .icon-bar {
+//   background-color: #fff;
+// }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #1ee2e7;
-}
+// .navbar-default .navbar-toggle:hover,
+// .navbar-default .navbar-toggle:focus {
+//   background-color: #1ee2e7;
+// }
 
-.navbar-default .nav li a {
-  text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #fff;
-}
+// .navbar-default .nav li a {
+//   text-transform: uppercase;
+//   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   font-weight: 400;
+//   letter-spacing: 1px;
+//   color: #fff;
+// }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
-  outline: 0;
-  color: #1ee2e7;
-}
+// .navbar-default .nav li a:hover,
+// .navbar-default .nav li a:focus {
+//   outline: 0;
+//   color: #1ee2e7;
+// }
 
-.navbar-default .navbar-nav>.active>a {
-  border-radius: 0;
-  color: #fff;
-  background-color: #1ee2e7;
-}
+// .navbar-default .navbar-nav>.active>a {
+//   border-radius: 0;
+//   color: #fff;
+//   background-color: #1ee2e7;
+// }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-  color: #fff;
-  background-color: #17d0d5;
-}
+// .navbar-default .navbar-nav>.active>a:hover,
+// .navbar-default .navbar-nav>.active>a:focus {
+//   color: #fff;
+//   background-color: #17d0d5;
+// }
 
-@media(min-width:768px) {
-  .navbar-default {
-    padding: 25px 0;
-    border: 0;
-    background-color: transparent;
-    -webkit-transition: padding .3s;
-    -moz-transition: padding .3s;
-    transition: padding .3s;
-  }
+// @media(min-width:768px) {
+//   .navbar-default {
+//     padding: 25px 0;
+//     border: 0;
+//     background-color: transparent;
+//     -webkit-transition: padding .3s;
+//     -moz-transition: padding .3s;
+//     transition: padding .3s;
+//   }
 
-  .navbar-default .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-  }
+//   .navbar-default .navbar-brand {
+//     font-size: 2em;
+//     -webkit-transition: all .3s;
+//     -moz-transition: all .3s;
+//     transition: all .3s;
+//   }
 
-  .navbar-default .navbar-nav>.active>a {
-    border-radius: 3px;
-  }
+//   .navbar-default .navbar-nav>.active>a {
+//     border-radius: 3px;
+//   }
 
-  .navbar-default.navbar-shrink {
-    padding: 10px 0;
-    background-color: rgba(255, 255, 255, .5);
-  }
+//   .navbar-default.navbar-shrink {
+//     padding: 10px 0;
+//     background-color: rgba(255, 255, 255, .5);
+//   }
 
-  .navbar-default.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
-  }
-}
+//   .navbar-default.navbar-shrink .navbar-brand {
+//     font-size: 1.5em;
+//   }
+// }
 
 #logo {
   width: 60px;
@@ -1785,7 +1785,7 @@ h2 {
 h2::before {
   content: ' ';
   position: absolute;
-  width: 8em;
+  width: 9em;
   background: #004AAD;
   height: .4em;
   bottom: 0;
@@ -1850,9 +1850,9 @@ p {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
   }
 
-  form {
-    display: flex;
-  }
+  // form {
+  //   display: flex;
+  // }
 
   .form-left {
     width: 70%;
@@ -2071,7 +2071,7 @@ h2 {
 h2::before {
   content: ' ';
   position: absolute;
-  width: 8em;
+  width: 10em;
   background: #004AAD;
   height: .4em;
   bottom: 0;
@@ -2136,9 +2136,9 @@ p {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
   }
 
-  form {
-    display: flex;
-  }
+  // form {
+  //   display: flex;
+  // }
 
   .form-left {
     width: 70%;

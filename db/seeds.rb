@@ -8,6 +8,7 @@
 require 'open-uri'
 
 Project.delete_all
+puts 'delete done'
 
 puts 'Start..'
 mbh = Project.create(
@@ -75,7 +76,7 @@ aff = Project.create(
   category: "Web Design",
   utl: "https://academiefrancaisedefootballme.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655720443/mockup-of-an-imac-featuring-a-wooden-desk-in-a-home-office-setting-36558-r-el2_jjk8c8.png")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1659052030/production/Bleu_et_Jaune_Carre%CC%81_Immobilier_Logo_6_ctaamd.png")
 aff.photos.attach(io: project_photo, filename: "aff.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -102,7 +103,7 @@ adcrew = Project.create(
   category: "Web App",
   utl: "https://adcrew-paris.com/"
 )
-project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1655716849/The_WKND_iPhone_Mockup_bkckyf.jpg")
+project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1659032758/production/Maquette_mobile_rouge_re%CC%81aliste_rwaybk.png")
 adcrew.photos.attach(io: project_photo, filename: "adcrew.png", content_type: 'image/png')
 puts "attaching photo......"
 puts "saving project......"
@@ -113,7 +114,7 @@ uxdesign = Project.create(
   name: "UX Design",
   description: "Some Figma design.",
   category: "UX design",
-  utl: "http://www.portfolio-oneal.me/projects"
+  utl: "https://www.figma.com/file/2yOGVq1lrhzFwibYDEh9Lx/UI-Car-clone?node-id=0%3A1"
 )
 project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1657069046/New_Product_Mockup_Now_Available_Marketing_Promotion_Instagram_Story_Diaporama_169_etthhb.jpg")
 uxdesign.photos.attach(io: project_photo, filename: "uxdesign.png", content_type: 'image/png')
@@ -126,7 +127,7 @@ uxdesign2 = Project.create(
   name: "Coach app UX Design",
   description: "Some Figma design for  coach app",
   category: "UX design",
-  utl: "http://www.portfolio-oneal.me/projects"
+  utl: "https://www.figma.com/file/yuW9kc3Kys3PamprLSuQoK/Dark-Coach-WebApp?node-id=0%3A1"
 )
 project_photo = URI.open("https://res.cloudinary.com/disxvdqrq/image/upload/v1657069685/Maquette_mobile_rouge_re%CC%81aliste_1_aebqln.png")
 uxdesign2.photos.attach(io: project_photo, filename: "uxdesign2.png", content_type: 'image/png')

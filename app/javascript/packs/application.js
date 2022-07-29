@@ -5,6 +5,8 @@
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
+import { Application } from "stimulus"
+import { definitionsFromContext } from "stimulus/webpack-helpers"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
@@ -12,6 +14,9 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+const application = Application.start()
+const context = require.context("./controllers", true, /\.js$/)
+application.load(definitionsFromContext(context))
 
 // ----------------------------------------------------
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
@@ -25,10 +30,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
-import { loadDynamicBannerText } from '../components/banner';
+// import { loadDynamicBannerText } from '../components/banner';
+// import { buttonMenu} from '../components/btnmenu';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initUpdateNavbarOnScroll();
-  loadDynamicBannerText();
+  // loadDynamicBannerText();
+  // buttonMenu();
 });
