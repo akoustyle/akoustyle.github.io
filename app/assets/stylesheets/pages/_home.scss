@@ -668,7 +668,7 @@ h4,
 h5,
 h6 {
   /* text-transform: uppercase; */
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Abril Fatface', sans-serif;
   font-weight: 700;
 }
 
@@ -2068,16 +2068,16 @@ h2 {
   position: relative;
 }
 
-h2::before {
-  content: ' ';
-  position: absolute;
-  width: 100%;
-  background: #004AAD;
-  height: .4em;
-  bottom: 0;
-  z-index: -1;
-  margin-left: -.3em;
-}
+// h2::before {
+//   content: ' ';
+//   position: absolute;
+//   width: 100%;
+//   background: #004AAD;
+//   height: .4em;
+//   bottom: 0;
+//   z-index: -1;
+//   margin-left: -.3em;
+// }
 
 /* img {
     width: 100%;
