@@ -747,6 +747,13 @@ li {
   transform: translateX(400px);
 }
 
+.card-trip-user {
+  position: absolute;
+  right: -70px;
+  top: -90px;
+  width: 190px;
+}
+
 /* Media portfolio */
 
 @media screen and (max-width: 1300px) {

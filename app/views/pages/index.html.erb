@@ -141,7 +141,7 @@
         </div>
 
         <!-- Current Project #2 -->
-        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
+        <%# <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
           <div class="big-container-left">
             <h3>Auctor augue</h3>
             <p class="time-text">April 2019 - TBD</p> <!--Add your own dates-->
@@ -151,7 +151,7 @@
           <div class="small-container-right">
             <img src="assets/app.webp" class="title-image">
           </div>
-        </div>
+        </div> %>
 
         <!--MODALS-->
 
@@ -224,6 +224,13 @@
               </div>
               <h3><%= project.name %></h3>
               <p><%= project.category %></p>
+                <%# if project.category == "UX design" %>
+                  <%#= image_tag "#{ asset_url "figma.svg"}", class: 'card-trip-user' %>
+                <%# elsif project.category == "Web App" %>
+                  <%#= image_tag "#{ asset_url "ruby.svg"}", class: 'card-trip-user' %>
+                <%# else project.category == "Web design" %>
+                  <%#= image_tag "#{ asset_url "wordpress.svg"}", class: 'card-trip-user' %>
+                <%# end %>
               <a href="<%= project.utl %>" class="btn-projets" target="_blank">Découvrez le projet</a>
             </div>
           <% end %>
