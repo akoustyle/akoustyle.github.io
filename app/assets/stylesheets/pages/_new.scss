@@ -233,6 +233,7 @@ h1 {
   margin: 0 60px;
   padding-top: 70px;
   color: #004AAD;
+  line-height: 70px !important;
 }
 
 .txt-animation {
@@ -370,6 +371,7 @@ h1 {
   h1 {
     font-size: 50px;
     margin: 0 30px;
+    line-height: 70px !important;
   }
 
   .accueil p {
@@ -747,12 +749,12 @@ li {
   transform: translateX(400px);
 }
 
-.card-trip-user {
-  position: absolute;
-  right: -70px;
-  top: -90px;
-  width: 190px;
-}
+// .card-trip-user {
+//   position: absolute;
+//   right: -70px;
+//   top: -90px;
+//   width: 190px;
+// }
 
 /* Media portfolio */
 
