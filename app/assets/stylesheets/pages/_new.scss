@@ -780,7 +780,7 @@ li {
   }
 
   .item {
-    height: 420px;
+    height: auto !important;
   }
 
   .cont-img-port {
@@ -792,7 +792,7 @@ li {
 @media screen and (max-width: 390px) {
 
   .item {
-    height: 480px;
+    height: auto !important;
   }
   .cont-img-port {
     height: 230px;
@@ -871,7 +871,7 @@ li {
 }
 
 .b4 {
-  width: 50%;
+  width: 50% !important;
 }
 
 .b5 {
